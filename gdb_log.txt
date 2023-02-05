@@ -1,0 +1,196 @@
+Thread 1 "python3.9" hit Breakpoint 1, 0x000000049a64fb2e in PyInit__matfuncs_expm () from /usr/local/lib/python3.9/site-packages/scipy/linalg/_matfuncs_expm.cpython-39-x86_64-cygwin.dll
+(gdb) bt
+#0  0x000000049a64fb2e in PyInit__matfuncs_expm () from /usr/local/lib/python3.9/site-packages/scipy/linalg/_matfuncs_expm.cpython-39-x86_64-cygwin.dll
+#1  0x00000003fb453926 in libpython3.9!PyImport_AppendInittab () from /usr/bin/libpython3.9.dll
+#2  0x00000003fb4504c5 in libpython3.9!_Py_hashtable_destroy () from /usr/bin/libpython3.9.dll
+#3  0x00000003fb39ee54 in libpython3.9!PyBuffer_ToContiguous () from /usr/bin/libpython3.9.dll
+#4  0x00000003fb4ef65b in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+#5  0x00000003fb42d6a1 in libpython3.9!PyEval_EvalFrameEx () from /usr/bin/libpython3.9.dll
+#6  0x00000003fb361f84 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+#7  0x00000003fb4f444a in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+#8  0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+#9  0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+#10 0x00000003fb4f434f in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+#11 0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+#12 0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+#13 0x00000003fb4f2d77 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+#14 0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+#15 0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+#16 0x00000003fb4f2d77 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+#17 0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+#18 0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+#19 0x00000003fb4f2d77 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+#20 0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+#21 0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+#22 0x00000003fb362902 in libpython3.9!PyObject_VectorcallMethod () from /usr/bin/libpython3.9.dll
+#23 0x00000003fb362b89 in libpython3.9!_PyObject_CallMethodIdObjArgs () from /usr/bin/libpython3.9.dll
+#24 0x00000003fb4527d6 in libpython3.9!PyImport_ImportModuleLevelObject () from /usr/bin/libpython3.9.dll
+#25 0x00000003fb4f4094 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+#26 0x00000003fb42d6a1 in libpython3.9!PyEval_EvalFrameEx () from /usr/bin/libpython3.9.dll
+#27 0x00000003fb42da11 in libpython3.9!PyEval_EvalCode () from /usr/bin/libpython3.9.dll
+#28 0x00000003fb46b050 in libpython3.9!_Py_GetConfig () from /usr/bin/libpython3.9.dll
+#29 0x00000003fb46b264 in libpython3.9!_Py_GetConfig () from /usr/bin/libpython3.9.dll
+#30 0x00000003fb46dee8 in libpython3.9!PyRun_InteractiveOneFlags () from /usr/bin/libpython3.9.dll
+#31 0x00000003fb46e05a in libpython3.9!PyRun_InteractiveOneFlags () from /usr/bin/libpython3.9.dll
+#32 0x00000003fb46e5c1 in libpython3.9!PyRun_AnyFileExFlags () from /usr/bin/libpython3.9.dll
+#33 0x00000003fb48a4d8 in libpython3.9!Py_RunMain () from /usr/bin/libpython3.9.dll
+#34 0x00000003fb48a782 in libpython3.9!Py_BytesMain () from /usr/bin/libpython3.9.dll
+#35 0x00007ffd048780a1 in cygwin_dll_init () from /usr/bin/cygwin1.dll
+#36 0x00007ffd04875c86 in cygwin1!.assert () from /usr/bin/cygwin1.dll
+#37 0x00007ffd04875d34 in cygwin1!.assert () from /usr/bin/cygwin1.dll
+#38 0x0000000000000000 in ?? ()
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+(gdb) n
+Single stepping until exit from function PyInit__matfuncs_expm,
+which has no line number information.
+0x000000049a64bfb8 in PyModuleDef_Init () from /usr/local/lib/python3.9/site-packages/scipy/linalg/_matfuncs_expm.cpython-39-x86_64-cygwin.dll
+(gdb) n
+Single stepping until exit from function PyModuleDef_Init,
+which has no line number information.
+0x00000003fb39f900 in libpython3.9!PyModuleDef_Init () from /usr/bin/libpython3.9.dll
+(gdb) n
+Single stepping until exit from function libpython3.9!PyModuleDef_Init,
+which has no line number information.
+0x00000003fb453926 in libpython3.9!PyImport_AppendInittab () from /usr/bin/libpython3.9.dll
+(gdb) n
+Single stepping until exit from function libpython3.9!PyImport_AppendInittab,
+which has no line number information.
+0x00000003fb39faf0 in libpython3.9!PyModule_FromDefAndSpec2 () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyModule_FromDefAndSpec2,
+which has no line number information.
+0x00000003fb4504c5 in libpython3.9!_Py_hashtable_destroy () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_Py_hashtable_destroy,
+which has no line number information.
+0x00000003fb39ee54 in libpython3.9!PyBuffer_ToContiguous () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyBuffer_ToContiguous,
+which has no line number information.
+0x00000003fb4ef65b in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyEval_EvalFrameDefault,
+which has no line number information.
+0x00000003fb42d6a1 in libpython3.9!PyEval_EvalFrameEx () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyEval_EvalFrameEx,
+which has no line number information.
+0x00000003fb361f84 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyFunction_Vectorcall,
+which has no line number information.
+0x00000003fb4f444a in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyEval_EvalFrameDefault,
+which has no line number information.
+0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyInit_xxsubtype,
+which has no line number information.
+0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyFunction_Vectorcall,
+which has no line number information.
+0x00000003fb4f434f in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyEval_EvalFrameDefault,
+which has no line number information.
+[New Thread 17784.0x8380]
+[New Thread 17784.0x2030]
+0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyInit_xxsubtype,
+which has no line number information.
+0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyFunction_Vectorcall,
+which has no line number information.
+0x00000003fb4f2d77 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyEval_EvalFrameDefault,
+which has no line number information.
+
+[New Thread 17784.0x5a04]
+0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyInit_xxsubtype,
+which has no line number information.
+0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+(gdb) n
+Single stepping until exit from function libpython3.9!_PyFunction_Vectorcall,
+which has no line number information.
+0x00000003fb4f2d77 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyEval_EvalFrameDefault,
+which has no line number information.
+0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyInit_xxsubtype,
+which has no line number information.
+0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyFunction_Vectorcall,
+which has no line number information.
+0x00000003fb4f2d77 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyEval_EvalFrameDefault,
+which has no line number information.
+0x00000003fb4ec784 in libpython3.9!PyInit_xxsubtype () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyInit_xxsubtype,
+which has no line number information.
+0x00000003fb362107 in libpython3.9!_PyFunction_Vectorcall () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyFunction_Vectorcall,
+which has no line number information.
+0x00000003fb362902 in libpython3.9!PyObject_VectorcallMethod () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyObject_VectorcallMethod,
+which has no line number information.
+0x00000003fb362b89 in libpython3.9!_PyObject_CallMethodIdObjArgs () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyObject_CallMethodIdObjArgs,
+which has no line number information.
+0x00000003fb4527d6 in libpython3.9!PyImport_ImportModuleLevelObject () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyImport_ImportModuleLevelObject,
+which has no line number information.
+0x00000003fb4f4094 in libpython3.9!_PyEval_EvalFrameDefault () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_PyEval_EvalFrameDefault,
+which has no line number information.
+0x00000003fb42d6a1 in libpython3.9!PyEval_EvalFrameEx () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyEval_EvalFrameEx,
+which has no line number information.
+0x00000003fb42da11 in libpython3.9!PyEval_EvalCode () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyEval_EvalCode,
+which has no line number information.
+0x00000003fb46b050 in libpython3.9!_Py_GetConfig () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_Py_GetConfig,
+which has no line number information.
+0x00000003fb46dee8 in libpython3.9!PyRun_InteractiveOneFlags () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyRun_InteractiveOneFlags,
+which has no line number information.
+0x00000003fb46b0c0 in libpython3.9!_Py_GetConfig () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!_Py_GetConfig,
+which has no line number information.
+0x00000003fb46e062 in libpython3.9!PyRun_InteractiveOneFlags () from /usr/bin/libpython3.9.dll
+(gdb)
+Single stepping until exit from function libpython3.9!PyRun_InteractiveOneFlags,
+which has no line number information.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/scipy/linalg/test.py", line 1, in <module>
+    from _matfuncs_expm import pick_pade_structure, pade_UV_calc
+  File "scipy/linalg/_matfuncs_expm.pyx", line 1, in init scipy.linalg._matfuncs_expm
+  File "/usr/local/lib/python3.9/site-packages/scipy/linalg/__init__.py", line 209, in <module>
+    from ._matfuncs import *
+  File "/usr/local/lib/python3.9/site-packages/scipy/linalg/_matfuncs.py", line 20, in <module>
+    from ._matfuncs_expm import pick_pade_structure, pade_UV_calc
+ImportError: cannot import name 'pick_pade_structure' from partially initialized module '_matfuncs_expm' (most likely due to a circular import) (/usr/local/lib/python3.9/site-packages/scipy/linalg/_matfuncs_expm.cpython-39-x86_64-cygwin.dll)
+0x00000003fb46e5c1 in libpython3.9!PyRun_AnyFileExFlags () from /usr/bin/libpython3.9.dll
+(gdb)
